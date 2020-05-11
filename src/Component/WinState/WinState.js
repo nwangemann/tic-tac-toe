@@ -3,7 +3,7 @@ import React from 'react';
 const WinState = () => {
     return (
         <div>
-            <h2>Winner!!!!</h2>
+            <h1>Winner!!!!</h1>
         </div>
     );
 };

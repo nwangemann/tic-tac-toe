@@ -6,23 +6,23 @@
   align-items: center;
 }
 h1{
-  font-size: 50px;
+  font-size: 100px;
   font-weight: 800;
-
+  color: white;
 }
 .center{
-  border: 15px solid black;
+  border: 15px solid white;
 }
 
 .leftright{
-  border-top: 15px solid black;
-  border-bottom: 15px solid black;
+  border-top: 15px solid white;
+  border-bottom: 15px solid white;
 
 }
 
 .middle{
-  border-left: 15px solid black;
-  border-right: 15px solid black;
+  border-left: 15px solid white;
+  border-right: 15px solid white;
 }
 .row1{
   display: flex;
@@ -44,4 +44,37 @@ h1{
   width: 100vw;
   justify-content: center;
   align-items: center;
+}
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #9B75C0;
+background: -webkit-linear-gradient(top left, #9B75C0, #26D2D7);
+background: -moz-linear-gradient(top left, #9B75C0, #26D2D7);
+background: linear-gradient(to bottom right, #9B75C0, #26D2D7);
+}
+.boardParent{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  border-radius: 15px;
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 46px;
+  background: #A459AE;
+background: -webkit-linear-gradient(top left, #A459AE, #E6AE29);
+background: -moz-linear-gradient(top left, #A459AE, #E6AE29);
+background: linear-gradient(to bottom right, #A459AE, #E6AE29);
+  box-shadow:  9px 9px 18px #5e5e5e, 
+               -9px -9px 18px #ffffff;
 }

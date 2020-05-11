@@ -94,7 +94,7 @@ function Board() {
   }
 
   return (
-    <div>
+    <div className="boardParent">
       {winState ? (
         <WinState />
       ) : (
