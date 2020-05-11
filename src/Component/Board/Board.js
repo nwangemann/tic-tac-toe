@@ -3,13 +3,7 @@ import Box from "../Box/Box";
 import WinState from "../WinState/WinState";
 import styled, { keyframes } from "styled-components";
 import {
-  merge,
-  bounceInDown,
-  fadeIn,
-  flip,
-  flipInX,
-  flipInY,
-  zoomIn,
+  fadeIn
 } from "react-animations";
 
 const Fade = styled.div`

@@ -1,12 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import {
-  merge,
-  fadeIn,
-  flip,
-  flipInX,
-  flipInY,
-  zoomIn,
+  fadeIn
 } from "react-animations";
 
 const Fade = styled.div`
@@ -17,7 +12,7 @@ const WinState = (props) => {
   return (
     <Fade>
       <div className="winParent" onClick={props.reset}>
-        <img src="https://i.imgur.com/kv2oHwT.gif" />
+        <img src="https://i.imgur.com/kv2oHwT.gif" alt="win" />
         <h1 className="winText">Winner!!!!</h1>
         <button className="resetButton">Start New Game</button>
       </div>
