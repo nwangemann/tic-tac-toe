@@ -19,18 +19,20 @@ function Board() {
   const [winState, setWinState] = useState(false);
 
   function handleSelect(id) {
-    let playCharacter = "X";
-    if (!turnOne) {
-      playCharacter = "O";
-    }
-    let updated = [...selectedBoxes];
-    updated[id] = playCharacter;
-    setSelectedBoxes(updated);
-    let newArr = [...values];
-    newArr[id] = playCharacter;
-    setValues(newArr);
-    winCheck(newArr);
-    setTurnOne(!turnOne);
+      if(!selectedBoxes[id]){
+          let playCharacter = "X";
+          if (!turnOne) {
+            playCharacter = "O";
+          }
+          let updated = [...selectedBoxes];
+          updated[id] = playCharacter;
+          setSelectedBoxes(updated);
+          let newArr = [...values];
+          newArr[id] = playCharacter;
+          setValues(newArr);
+          winCheck(newArr);
+          setTurnOne(!turnOne);
+      }
   }
   function winCheck(newArray) {
       console.log('values', newArray)
