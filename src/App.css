@@ -126,4 +126,7 @@ background: linear-gradient(to bottom right, #A459AE, #E6AE29);
 
 .titleText {
   cursor: pointer;
+  /* box-shadow:  9px 9px 18px #5e5e5e, 
+  -9px -9px 18px #ffffff;
+  padding: 50px; */
 }
