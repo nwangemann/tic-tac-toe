@@ -63,6 +63,7 @@ background: linear-gradient(to bottom right, #9B75C0, #26D2D7);
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 button{
   border-radius: 15px;
@@ -72,6 +73,7 @@ button{
   font-size: 20px;
   font-weight: 800;
   border-radius: 46px;
+  cursor: pointer;
   background: #A459AE;
 background: -webkit-linear-gradient(top left, #A459AE, #E6AE29);
 background: -moz-linear-gradient(top left, #A459AE, #E6AE29);
@@ -120,4 +122,8 @@ background: -moz-linear-gradient(top left, #A459AE, #E6AE29);
 background: linear-gradient(to bottom right, #A459AE, #E6AE29);
   box-shadow:  9px 9px 18px #5e5e5e, 
                -9px -9px 18px #ffffff;
+}
+
+.titleText {
+  cursor: pointer;
 }
