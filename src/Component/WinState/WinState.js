@@ -14,7 +14,6 @@ const WinState = (props) => {
       <div className="winParent" onClick={props.reset}>
         <img src="https://i.imgur.com/kv2oHwT.gif" alt="win" />
         <h1 className="winText">Winner!!!!</h1>
-        <button className="resetButton">Start New Game</button>
       </div>
     </Fade>
   );

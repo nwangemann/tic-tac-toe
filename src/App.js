@@ -3,11 +3,7 @@ import "./App.css";
 import Board from "./Component/Board/Board";
 import styled, { keyframes } from "styled-components";
 import Greeting from "./Component/Greeting/Greeting";
-import {
-  merge,
-  bounceInDown,
-  fadeIn
-} from "react-animations";
+import { merge, bounceInDown, fadeIn } from "react-animations";
 
 //(bounceInDown, flip);
 const mergeStyle = merge(bounceInDown, fadeIn);
@@ -28,6 +24,9 @@ function App() {
   }
   return (
     <div className="App">
+      <div className="buttonBody">
+        <a href="#" className="rainbow" alt="Button"></a>
+      </div>
       {enter ? (
         <Greeting hidden={hidden} clickIt={() => setEnter(false)} />
       ) : (

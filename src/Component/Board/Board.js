@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import Box from "../Box/Box";
 import WinState from "../WinState/WinState";
 import styled, { keyframes } from "styled-components";
-import {
-  fadeIn
-} from "react-animations";
+import { fadeIn } from "react-animations";
 
 const Fade = styled.div`
   animation: 2s ${keyframes`${fadeIn}`};
