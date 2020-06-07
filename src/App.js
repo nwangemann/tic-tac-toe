@@ -15,6 +15,7 @@ const Rotate = styled.div`
 function App() {
   const [enter, setEnter] = useState(true);
   const [hidden, setHidden] = useState(false);
+  const [myState, setMyState] = useState(false)
   function ziggazagga() {
     setEnter(true);
     setHidden(true);
@@ -26,12 +27,13 @@ function App() {
     <div className="App">
       <div className="buttonBody">
         <a href="#" className="rainbow" alt="Button"></a>
+        {myState && <button>Click this</button>}
       </div>
       {enter ? (
         <Greeting hidden={hidden} clickIt={() => setEnter(false)} />
       ) : (
         <Rotate>
-          <Board whenItResets={ziggazagga} />
+          <Board whenItResets={ziggazagga}/>
         </Rotate>
       )}
     </div>
