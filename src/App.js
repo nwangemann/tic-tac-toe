@@ -33,7 +33,7 @@ function App() {
         <Greeting hidden={hidden} clickIt={() => setEnter(false)} />
       ) : (
         <Rotate>
-          <Board whenItResets={ziggazagga} />
+          <Board whenItResets={ziggazagga}/>
         </Rotate>
       )}
     </div>
